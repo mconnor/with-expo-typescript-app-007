@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "with-expo-typescript-app-007",
+    "slug": "with-expo-typescript-app-007",
+    "version": "1.0.0",
+    "sdkVersion": "42.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
