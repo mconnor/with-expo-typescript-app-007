@@ -1,5 +1,5 @@
 // @generated: @expo/next-adapter@2.1.9
-import Hello from '../component/Hello'
+import Hello from 'component/Hello'
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function App() {

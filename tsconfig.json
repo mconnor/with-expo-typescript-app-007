@@ -15,6 +15,15 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+        "~/*": [
+            "./*"
+        ],
+        "baseUrl": [
+            "./"
+        ]
+    },
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
