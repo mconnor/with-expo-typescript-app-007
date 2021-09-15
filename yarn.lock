@@ -2382,12 +2382,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@next/eslint-plugin-next@npm:11.1.0"
+"@next/eslint-plugin-next@npm:11.1.2":
+  version: 11.1.2
+  resolution: "@next/eslint-plugin-next@npm:11.1.2"
   dependencies:
     glob: 7.1.7
-  checksum: 27ac35a84aa8a9887a4bfc993f496d912092b361d75ae1110b326883732a3edf71d8523ea275964daa6fa61f2a63d3259a0d9b9d53425137e925dbc41e12273a
+  checksum: 93e43795588875c083335b76858ece4a02f0a3818f32d7e01e76ad8204fd22758201815753e47d08c86020bd2fddf3425f5a80835cb57a2b31ab26b13a7f0960
   languageName: node
   linkType: hard
 
@@ -3685,7 +3685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:16.6.1":
+"@types/node@npm:*":
   version: 16.6.1
   resolution: "@types/node@npm:16.6.1"
   checksum: c13aa0da0c2bf9070e521d1b537ba38f64b213dd1b8aeec66c279fc21f8c0ccaf380364f6dc2ec8f84440c4cd1460b67dfe47de2cafcb6eaf4b648817cb27dc4
@@ -3696,6 +3696,13 @@ __metadata:
   version: 12.20.19
   resolution: "@types/node@npm:12.20.19"
   checksum: 00b623beed4d4b17ad8d60bd2e99a0acab1b95e1d2242d1e2c313abd05a639ecb902c33c5970436d2fd13d5d772747dec6ec73d7f40ad799fe09a35009566699
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.9.1":
+  version: 16.9.1
+  resolution: "@types/node@npm:16.9.1"
+  checksum: 41afcf183a22d59323a0199dd7e0f46591247f45fc08a4434edb26d56dc279ae4fdb80f37989ddd7a0f45e3857c4933e6e82057ede09c5a829f77e373e680375
   languageName: node
   linkType: hard
 
@@ -7376,11 +7383,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "eslint-config-next@npm:11.1.0"
+"eslint-config-next@npm:^11.1.2":
+  version: 11.1.2
+  resolution: "eslint-config-next@npm:11.1.2"
   dependencies:
-    "@next/eslint-plugin-next": 11.1.0
+    "@next/eslint-plugin-next": 11.1.2
     "@rushstack/eslint-patch": ^1.0.6
     "@typescript-eslint/parser": ^4.20.0
     eslint-import-resolver-node: ^0.3.4
@@ -7396,7 +7403,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 763dd4fc7d7062c518069c7a94a5bc3119af5c358f410eaa969446b03465a584fe0a19876ecf3b13a8e490ee047e4ca272a87729a4df30373386a4c5d147b2a7
+  checksum: c8de0e0a72617a7902bf2599e87acb0d83ab45f5046ed1f723a83ef8d48ed1897aebe93d560d0e901d0bff494e63bba22d09d159ab1ddbc39a36b9a5213084dc
   languageName: node
   linkType: hard
 
@@ -14182,7 +14189,7 @@ resolve@^2.0.0-next.3:
   dependencies:
     "@babel/core": ^7.15.5
     "@expo/next-adapter": ^3.0.6
-    "@types/node": 16.6.1
+    "@types/node": ^16.9.1
     "@types/react": ^17.0.21
     "@types/react-dom": ~17.0.9
     "@types/react-native": ~0.63.53
@@ -14190,7 +14197,7 @@ resolve@^2.0.0-next.3:
     babel-preset-expo: 8.4.1
     eslint: ^7.32.0
     eslint-config-airbnb: ^18.2.1
-    eslint-config-next: ^11.1.0
+    eslint-config-next: ^11.1.2
     eslint-config-prettier: ^8.3.0
     eslint-plugin-react: ^7.25.1
     expo: ^42.0.3
