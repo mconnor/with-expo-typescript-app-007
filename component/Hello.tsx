@@ -1,7 +1,5 @@
+import { Box, Button} from 'native-base'
 import { useEffect, useState } from 'react'
-import { View, Text, Button} from 'react-native'
-
-
 
 
 export default function Hello() {
@@ -10,17 +8,13 @@ export default function Hello() {
 
     useEffect(() => {
         if (count > 5) setCount(0)
-    }, [count]);
-
-    const onClick = () => {
-        setCount(count + 1)
-    }
+    }, []);
 
 
 
     return (
-        <View><Text>HELLO {count}</Text>
-            <Button title="btn" onPress={onClick} />
-        </View>
+        <Box>Count =  {count}
+            <Button onPress={() => setCount(count + 1)}>INC</Button>
+        </Box>
     )
 }
