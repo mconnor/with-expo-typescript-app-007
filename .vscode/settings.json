@@ -1,0 +1,63 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeForeground": "#000",
+        "titleBar.inactiveForeground": "#000000CC",
+        // "titleBar.activeBackground": "#15ff00",
+        // "titleBar.inactiveBackground": "#15ff00"
+    },
+    "files.exclude": {
+        "amplify/.config": false,
+        "amplify/**/*-parameters.json": true,
+        "amplify/**/amplify.state": true,
+        "amplify/**/transform.conf.json": true,
+        "amplify/#current-cloud-backend": true,
+        "amplify/backend/amplify-meta.json": true,
+        "amplify/backend/awscloudformation": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "cSpell.words": [
+        "AWSUSER",
+        "Amplifyplatform",
+        "Kolor",
+        "MCREATED",
+        "MMODIFIED",
+        "MMSS",
+        "Millis",
+        "datepicker",
+        "datocms",
+        "deepmerge",
+        "fbuser",
+        "insta",
+        "metafields",
+        "parralleal",
+        "precommit",
+        "prefetch",
+        "recaptcha",
+        "setimmediate"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "prettier.configPath": "./.prettierrc.json",
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "yarn",
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.lintTask.enable": true,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "graphql-config.load.baseDir": "./lib/generated",
+    "terminal.integrated.scrollback": 1000000,
+    "to.enableCodeLens": "enable",
+    "typescript.tsdk": "./node_modules/typescript/lib"
+}
