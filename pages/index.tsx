@@ -1,7 +1,7 @@
 // @generated: @expo/next-adapter@2.1.9
 import Hello from 'component/Hello'
-import { StyleSheet, Text } from 'react-native'
-import { Box } from 'native-base'
+import { StyleSheet } from 'react-native'
+import { Container, Center, Heading, NativeBaseProvider } from 'native-base'
 
 const styles = StyleSheet.create({
     container: {
@@ -14,11 +14,20 @@ const styles = StyleSheet.create({
     },
 })
 
-export default function App() {
+export function ContainerComponent() {
     return (
-        <Box style={styles.container}>
-            <Text style={styles.text}>Welcome to Expo 42 + Next.js </Text>
+        <Container>
+            <Heading style={styles.text}>Welcome to Expo 42 + Next.js </Heading>
             <Hello />
-        </Box>
+        </Container>
+    )
+}
+export default function Index() {
+    return (
+        <NativeBaseProvider>
+            <Center flex={1} backgroundColor="blue.300">
+                <ContainerComponent />
+            </Center>
+        </NativeBaseProvider>
     )
 }

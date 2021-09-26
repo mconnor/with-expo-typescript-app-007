@@ -1,17 +1,50 @@
-import { Box, Button } from 'native-base'
-import { useEffect, useState } from 'react'
+/* eslint-disable react/destructuring-assignment */
+import { Box, Button, VStack, Center, Flex } from 'native-base'
+import { useState, ReactNode } from 'react'
+import { useWindowDimensions } from 'react-native'
+import usePrevious from '~/hooks/usePrevious'
+
+type BoxType = {
+    children: ReactNode
+}
+
+const MAX = 5
+
+const StyledBox = (props: BoxType) => (
+    <Center
+        width="100%"
+        borderWidth={2}
+        borderColor="black"
+        p={8}
+        _text={{ fontWeight: 'bold', fontSize: 'lg' }}
+    >
+        {props.children}
+    </Center>
+)
 
 export default function Hello() {
     const [count, setCount] = useState(0)
+    const prevCount = usePrevious(count)
 
-    useEffect(() => {
-        if (count > 5) setCount(0)
-    }, [count])
+    const { width } = useWindowDimensions()
+
+    const onClick = () => {
+        if (count < MAX) {
+            setCount(count + 1)
+        } else {
+            setCount(0)
+        }
+    }
 
     return (
-        <Box>
-            Count = {count}
-            <Button onPress={() => setCount(count + 1)}>INC</Button>
-        </Box>
+        <Flex justify="space-around">
+            <StyledBox>{`Count=${count}`}</StyledBox>
+
+            <StyledBox>{`PreviousCount=${prevCount}`}</StyledBox>
+
+            <StyledBox>Lorem ipsum dolor sit amet consectetur</StyledBox>
+
+            <Button colorScheme="primary" onPress={onClick}>INC</Button>
+        </Flex>
     )
 }
