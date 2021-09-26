@@ -1,8 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
-import { Box, Button, VStack, Center, Flex } from 'native-base'
+import { Button, Center, Flex } from 'native-base'
 import { useState, ReactNode } from 'react'
-import { useWindowDimensions } from 'react-native'
-import usePrevious from '~/hooks/usePrevious'
+
+import usePrevious from 'hooks/usePrevious'
 
 type BoxType = {
     children: ReactNode
@@ -26,8 +26,6 @@ export default function Hello() {
     const [count, setCount] = useState(0)
     const prevCount = usePrevious(count)
 
-    const { width } = useWindowDimensions()
-
     const onClick = () => {
         if (count < MAX) {
             setCount(count + 1)
@@ -44,7 +42,9 @@ export default function Hello() {
 
             <StyledBox>Lorem ipsum dolor sit amet consectetur</StyledBox>
 
-            <Button colorScheme="primary" onPress={onClick}>INC</Button>
+            <Button colorScheme="primary" onPress={onClick}>
+                INC
+            </Button>
         </Flex>
     )
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 // @generated: @expo/next-adapter@2.1.9
 import Hello from 'component/Hello'
 import { StyleSheet } from 'react-native'
