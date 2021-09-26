@@ -3,8 +3,6 @@
 
 // eslint-disable-next-line func-names
 module.exports = function (api) {
-    const isServer = api.caller((caller) => caller?.isServer)
-    const isCallerDevelopment = api.caller((caller) => caller?.isDev)
     api.cache(true)
     return {
         presets: [['@expo/next-adapter/babel']],
